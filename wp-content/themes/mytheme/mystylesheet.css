@@ -43,3 +43,15 @@
     margin-left: 75px;
     margin-right: 75px;
 }
+
+.socialmedia {
+    border-radius: 50%;
+    width: 200px;
+    height: auto;
+}
+
+#contactme {
+    text-align: center;
+    font-size: 50px;
+    color: white;
+}
