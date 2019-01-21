@@ -1,53 +1,19 @@
-<hr>
-<footer class="page-footer font-small blue pt-4">
-
-<div class="container-fluid text-center text-md-left">
-
-  <div class="row">
-    <div class="col-md-6 mt-md-0 mt-3">
-      <h5 class="text-uppercase">Footer Content</h5>
-      <p>Here you can use rows and columns here to organize your footer content.</p>
-    </div>
-    <hr class="clearfix w-100 d-md-none pb-3">
-    <div class="col-md-3 mb-md-0 mb-3">
-        <h5 class="text-uppercase">Links</h5>
-        <ul class="list-unstyled">
-          <li>
-            <a href="#!">Link 1</a>
-          </li>
-          <li>
-            <a href="#!">Link 2</a>
-          </li>
-          <li>
-            <a href="#!">Link 3</a>
-          </li>
-          <li>
-            <a href="#!">Link 4</a>
-          </li>
-        </ul>
-      </div>
-      <div class="col-md-3 mb-md-0 mb-3">
-        <h5 class="text-uppercase">Links</h5>
-        <ul class="list-unstyled">
-          <li>
-            <a href="#!">Link 1</a>
-          </li>
-          <li>
-            <a href="#!">Link 2</a>
-          </li>
-          <li>
-            <a href="#!">Link 3</a>
-          </li>
-          <li>
-            <a href="#!">Link 4</a>
-          </li>
-        </ul>
-      </div>
-  </div>
-</div>
-<div class="footer-copyright text-center py-3">© 2018 Copyright:
-  <a href="https://www.instagram.com/kevinrl__/"> Kevin Reynaldo</a>
-</div>
+<nav class="navbar fixed-bottom navbar-expand-sm navbar-dark bg-dark d-flex justify-content-center">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <?php wp_nav_menu( array(
+                  'theme_location'  => 'top',
+                  'depth'	          => 2, // 1 = no dropdowns, 2 = with dropdowns.
+                  'container'       => 'div',
+                  'container_class' => 'collapse navbar-collapse justify-content-center',
+                  'container_id'    => 'bs-example-navbar-collapse-1',
+                  'menu_class'      => 'navbar-nav justify-content-center',
+                  'fallback_cb'     => 'WP_Bootstrap_Navwalker::fallback',
+                  'walker'          => new WP_Bootstrap_Navwalker(),
+                ) );
+              ?>
+    </nav>
 </footer>
     <?php wp_footer(); ?>
   </body>

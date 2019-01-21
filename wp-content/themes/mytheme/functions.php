@@ -1,4 +1,7 @@
-<?php 
+<?php
+
+// Register Custom Navigation Walker
+require_once get_template_directory() . '/class-wp-bootstrap-navwalker.php';
 
 function add_theme_scripts () {
     wp_deregister_script('jquery');
