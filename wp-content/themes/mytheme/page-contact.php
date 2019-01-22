@@ -23,7 +23,7 @@
             <a href="https://steamcommunity.com/id/NearlyInvoked"><img class="img-fluid socialmedia" src="<?php bloginfo('template_url'); ?> /image/steam.png" alt=""></a>
         </div>
         <div class="col mx-5">
-
+        
         </div>
     </div>
 </div>
@@ -31,5 +31,6 @@
 <br>
 <br>
 <br>
+<?php echo do_shortcode('[instagram-feed]'); ?>
 
 <?php get_footer(); ?>
