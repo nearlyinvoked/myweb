@@ -21,3 +21,67 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
 Normalizing styles have been helped along thanks to the fine work of
 Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 */
+
+#logonav {
+    width: 90px;
+    height: auto;
+}
+
+#homepic {
+    display: block;
+    height: auto;
+    width: 100%;
+    padding: 0;
+}
+
+.homepicbg {
+}
+
+.banner-news-img {
+    width: 100%;
+    height: 384px;
+    object-fit: cover;
+  }
+
+.nav-item {
+    font-size: 20px;
+}
+
+.center-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 40px;
+    font-style: italic;
+  }
+
+#aboutme {
+    color: white;
+    font-size: 30px;
+}
+#about {
+    text-align: center;
+}
+#tpp {
+    text-align: center;
+    font-style: italic;
+}
+#aboutisi {
+    font-size: 20px;
+    margin-left: 75px;
+    margin-right: 75px;
+}
+
+.socialmedia {
+    border-radius: 50%;
+    width: 200px;
+    height: auto;
+}
+
+#contactme {
+    text-align: center;
+    font-size: 50px;
+    color: white;
+}
